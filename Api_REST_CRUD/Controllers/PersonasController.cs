@@ -6,6 +6,8 @@ using System.Data.Entity;
 
 namespace Api_REST_CRUD.Controllers
 {
+    [Authorize]
+    [RoutePrefix("api/personas")]
     public class PersonasController : ApiController
     {
         private AdventureWorksLT2017Entities dbContext = new AdventureWorksLT2017Entities();
